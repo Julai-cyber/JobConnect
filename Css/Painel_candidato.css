@@ -1,0 +1,823 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+#dashboard-container{
+
+}
+
+#areaMenu{
+  background: #1a252f;
+  color: white;
+  display: none;
+  min-height: 100vh;
+}
+
+#sidebar{
+  padding: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#sidebar #fotoCandidato{
+  text-align: center;
+  background: #3498db;
+  padding: 35px;
+  border-radius: 50%;
+  margin-left: -30px;
+}
+
+#sidebar #info-candidato{
+  margin-right: 15px;
+}
+
+#sidebar #botaoFechar{
+  font-size: 40px;
+  margin-right: -50px;
+}
+
+#navMenu #navegacao{
+  margin: 20px;
+  list-style: none;
+}
+
+#navMenu #navegacao #navItem{
+  padding: 25px;
+}
+
+#navMenu #navegacao #navItem .navLink{
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  border-left: 4px solid transparent;
+  display: block;
+}
+
+#navItem:hover, #navItem.active{
+  background-color: rgba(255, 255, 255, 0.05);
+    color: white;
+  border-left: 4px solid #3498db;
+}
+
+/* ===== CONTROLE DE TELAS ===== */
+.modal {
+  display: none;
+}
+
+.modal.ativo {
+  display: block;
+}
+
+/* ===== MENU ===== */
+.navItem {
+  padding: 25px;
+}
+
+.navLink {
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+.navItem.active {
+  background-color: rgba(255,255,255,0.05);
+  border-left: 4px solid #3498db;
+}
+
+.ativo{
+  background: white;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+ #main-content #dashboard-header{
+  background: #fff;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px 3px #3498db;
+}
+
+#main-content #header-right{
+  display: none;
+}
+
+#main-content #header-left{
+  display: flex;
+  justify-content: space-around;
+}
+
+#main-content #header-left #menu{
+  font-size: 1.5rem;
+  width: 20%;
+}
+
+#main-content #header-left #titulo{
+  width: 70%;
+}
+
+#main-content #content-area #dashboard-block{
+  display: flex;
+  flex-direction: column;
+}
+
+#main-content #content-area #dashboard-block .div-block{
+  padding: 30px;
+  margin: 10px;
+  box-shadow: 1px 1px 1px 1px gray;
+  border-radius: 9px;
+}
+
+#main-content #content-area #dashboard-block .div-block #iconeDash, #numDash{
+  font-size: 1.8rem;
+}
+
+#main-content #content-area #dashboard-block .div-block #iconeDash, #numDash, #pDash{
+  margin: 20px 0;
+}
+
+#main-content #content-area #dashboard-block .div-block #pDash{
+  color: #2c3e50;
+  font-size: 1rem;
+}
+
+#main-content #content-area #dashboard-block #vagas-concorridas{
+  border-left: 5px solid #3498db;
+}
+
+#main-content #content-area #dashboard-block #entrevistas-agendadas{
+  border-left: 5px solid  #2ecc71;
+}
+
+#main-content #content-area #dashboard-block #visus-doPerfil{
+  border-left: 5px solid  #f39c12;
+}
+
+#div-vagas #vagas-header{
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#div-vagas #vagas-header #ult-vagas{
+  color: #2c3e50;
+}
+
+#div-vagas #vagas-header #link-vagas{
+  text-decoration: none;
+  color: #3498db;
+  font-weight: bold;
+}
+
+#div-vagas #vaga{
+  padding: 30px;
+  margin: 10px;
+  box-shadow: 1px 1px 1px 1px gray;
+  border-radius: 9px;
+}
+
+#ultimas-vagas #div-vagas #vaga #titulo-vaga, 
+#nome-empresa,
+#home-presencial,
+#salario,
+#dia-publicado{
+  margin: 15px 0;
+  color: #2c3e50;
+}
+
+#ultimas-vagas #div-vagas #vaga #acoes{
+  margin-top: 15px;
+  display: flex;
+}
+
+#ultimas-vagas #div-vagas #vaga #acoes #candidatar,
+#Detalhes,
+#salvar{
+  padding: 10px 0;
+  font-size: 0.8rem;
+  margin: 5px;
+  border: none;
+  border-radius: 7px;
+}
+
+#ultimas-vagas #div-vagas #vaga #acoes #candidatar{
+  background: #2ecc71;
+  width: 33%;
+}
+
+#ultimas-vagas #div-vagas #vaga #acoes #Detalhes{
+  background: #3498db;
+  width: 33%;
+}
+
+#ultimas-vagas #div-vagas #vaga #acoes #salvar{
+  background: #5d6d7e;
+  width: 33%;
+}
+
+#vagas-section{
+  background: white;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+#vagas-section #vagas-header{
+  background: #fff;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px 3px #3498db;
+}
+
+#vagas-section #vagas-header #vagas-left{
+  display: flex;
+  justify-content: space-around;
+}
+
+#vagas-section #vagas-header #vagas-right{
+  display: none;
+}
+
+#vagas-section #vagas-left #menu{
+  font-size: 1.5rem;
+  width: 20%;
+}
+
+#vagas-section #vagas-left #titulo{
+  width: 70%;
+}
+
+#vagas-section #meio{
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 10px 40px 10px;
+}
+
+#vagas-section #meio #filtrar #filtro{
+  padding: 15px;
+  border-radius: 7px;
+  font-size: 1rem;
+}
+
+#vagas-section #vagas-emprego #vaga{
+  padding: 30px;
+  margin: 10px;
+  box-shadow: 1px 1px 1px 1px gray;
+  border-radius: 9px;
+}
+
+#vagas-section #vagas-emprego #vaga #titulo-vaga, 
+#nome-empresa,
+#home-presencial,
+#salario,
+#dia-publicado{
+  margin: 15px 0;
+  color: #2c3e50;
+}
+
+#vagas-section #vagas-emprego #vaga #acoes{
+  margin-top: 15px;
+  display: flex;
+}
+
+#vagas-section #vagas-emprego #vaga #acoes #candidatar,
+#Detalhes,
+#salvar{
+  padding: 10px 0;
+  font-size: 0.8rem;
+  margin: 5px;
+  border: none;
+  border-radius: 7px;
+}
+
+#vagas-section #vagas-emprego #vaga #acoes #candidatar{
+  background: #2ecc71;
+  width: 33%;
+}
+
+#vagas-section #vagas-emprego #vaga #acoes #Detalhes{
+  background: #3498db;
+  width: 33%;
+}
+
+#vagas-section #vagas-emprego #vaga #acoes #salvar{
+  background: #5d6d7e;
+  width: 33%;
+}
+
+#minhas-candidaturas{
+  background: white;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+#minhas-candidaturas #candidaturas-header{
+  background: #fff;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px 3px #3498db;
+}
+
+#minhas-candidaturas #candidaturas-header #candidaturas-left{
+  display: flex;
+  justify-content: space-around;
+}
+
+#minhas-candidaturas #candidaturas-header #candidaturas-right{
+  display: none;
+}
+
+#minhas-candidaturas #candidaturas-left #menu{
+  font-size: 1.5rem;
+  width: 20%;
+}
+
+#minhas-candidaturas #candidaturas-left #titulo{
+  font-size: 0.7rem;
+  width: 70%;
+}
+
+#minhas-candidaturas #titulo-candidatura{
+  margin: 40px 10px 40px 10px;
+}
+
+#minhas-candidaturas .candidaturas-enviadas .candidatura{
+  padding: 30px;
+  margin: 10px;
+  box-shadow: 1px 1px 1px 1px gray;
+  border-radius: 9px;
+}
+
+#minhas-candidaturas .candidaturas-enviadas .candidatura .candidatura-header,
+.empresa-candidatura,
+.data-candidatura, .btns{
+  margin: 20px 0 20px 0;
+}
+
+#minhas-candidaturas .candidaturas-enviadas .candidatura .candidatura-header{
+  display: flex;
+  justify-content: space-between;
+}
+
+#minhas-candidaturas .candidaturas-enviadas .candidatura .candidatura-header .estado{
+  padding: 10px;
+  background-color: #fef9e7;
+  color: #f39c12;
+  border-radius: 10px;
+}
+
+#minhas-candidaturas .candidaturas-enviadas .candidatura .empresa-candidatura, .data-candidatura{
+  color: #2c3e50;
+}
+
+#minhas-candidaturas .candidaturas-enviadas .candidatura .btns{
+  display: flex;
+  justify-content: space-between;
+}
+
+#minhas-candidaturas .candidaturas-enviadas .candidatura .btns .detalhes{
+  padding: 5px 10px 5px 10px;
+  margin: 10px;
+  background: #3498db;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+}
+
+#minhas-candidaturas .candidaturas-enviadas .candidatura .btns .Contactar{
+  padding: 5px 10px 5px 10px;
+  margin: 10px;
+  background: #2ecc71;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+}
+
+#perfil-candidato{
+  background: white;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+#perfil-candidato #perfil-header{
+  background: #fff;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px 3px #3498db;
+}
+
+#perfil-candidato #perfil-header #perfil-left{
+  display: flex;
+  justify-content: space-around;
+}
+
+#perfil-candidato #perfil-header #perfil-right{
+  display: none;
+}
+
+#perfil-candidato #perfil-left #menu{
+  font-size: 1.5rem;
+  width: 20%;
+}
+
+#perfil-candidato #perfil-left #titulo{
+  font-size: 0.7rem;
+  width: 70%;
+}
+
+#perfil-candidato #main-perfil{
+  padding: 30px;
+  margin: 30px 10px 10px 10px;
+  box-shadow: 1px 1px 1px 1px gray;
+  border-radius: 9px;
+}
+
+#perfil-candidato #main-perfil #perfilDados #perfil-img{
+  text-align: center;
+  width: 150px;
+  height: 150px;
+  background: #3498db;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  color: white;
+  margin: 0 auto 20px;
+}
+
+#perfil-candidato #main-perfil #perfilDados #info-perfil *{
+  text-align: center;
+  margin: 15px;
+}
+
+#perfil-candidato #main-perfil #perfilDados #info-perfil #nomeCandidato{
+  font-size: 1.5rem;
+  color: #2c3e50;
+}
+
+#perfil-candidato #main-perfil #perfilDados #info-perfil #profissao{
+  color: #3498db;
+  font-weight: 500;
+}
+
+#perfil-candidato #main-perfil #detalhesPerfil{
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#perfil-candidato #main-perfil #detalhesPerfil p:first-child{
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+#perfil-candidato #contactos{
+  padding: 30px;
+  margin: 30px 10px 10px 10px;
+  box-shadow: 1px 1px 1px 1px gray;
+  border-radius: 9px;
+}
+
+#perfil-candidato #contactos #title-contactos{
+  color: #2c3e50;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+#perfil-candidato #contactos p{
+  margin: 10px;
+  text-align: center;
+}
+
+#perfil-candidato #sobreMim{
+  padding: 30px;
+  margin: 30px 10px 10px 10px;
+  box-shadow: 1px 1px 1px 1px gray;
+  border-radius: 9px;
+}
+
+#perfil-candidato #sobreMim h2{
+  color: #2c3e50;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+#perfil-candidato #sobreMim p{
+  margin-top: 25px;
+}
+
+#perfil-candidato #experiencia{
+  padding: 30px;
+  margin: 30px 10px 10px 10px;
+  box-shadow: 1px 1px 1px 1px gray;
+  border-radius: 9px;
+}
+
+#perfil-candidato #experiencia #titulo-xp{
+  color: #2c3e50;
+  margin-bottom: 25px;
+}
+
+#perfil-candidato #experiencia .xp-pro{
+  padding: 30px 0 30px 0;
+}
+
+#perfil-candidato #experiencia .xp-pro .meu-xp{
+  color: #2c3e50;
+  margin-bottom: 25px;
+}
+
+#perfil-candidato #experiencia .xp-pro .xp-local{
+  color: #3498db;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+#perfil-candidato #formacao{
+  padding: 30px;
+  margin: 30px 10px 10px 10px;
+  box-shadow: 1px 1px 1px 1px gray;
+  border-radius: 9px;
+}
+
+#perfil-candidato #formacao #titulo-formacao{
+  color: #2c3e50;
+  margin-bottom: 25px;
+}
+
+#perfil-candidato #formacao .nome-escola .minha-area{
+  color: #2c3e50;
+  margin-top: 25px;
+}
+
+#perfil-candidato #formacao .nome-escola .formacao-escola{
+  color: #3498db;
+  font-weight: bold;
+  margin-top: 25px;
+}
+
+#perfil-candidato #habilidades{
+  padding: 30px;
+  margin: 30px 10px 10px 10px;
+  box-shadow: 1px 1px 1px 1px gray;
+  border-radius: 9px;
+}
+
+#perfil-candidato #habilidades #titulo-skills{
+  color: #2c3e50;
+  margin-bottom: 25px;
+}
+
+#perfil-candidato #habilidades .meus-skills p{
+  padding: 15px;
+  margin: 5px;
+  margin-top: 25px;
+  background: #e8f4fc;
+  color:  #3498db;
+  border-radius: 7px;
+  display: inline-block;
+}
+
+#perfil-candidato #editar{
+  background: #3498db;
+  color: white;
+  font-weight: 500;
+  padding: 10px;
+  margin: 30px 10px 10px 10px;
+  width: 100%;
+  border: none;
+  border-radius: 7px;
+}
+
+/*========= RESPONSIVIDADE ==========*/
+@media (min-width: 768px){
+  
+  #dashboard-container{
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  #dashboard-container #areaMenu{
+    display: inline-block;
+    position: fixed;
+  }
+
+  #sidebar,
+  #navMenu{
+    width: 300px;
+  }
+
+  #sidebar{
+    flex-direction: row;
+    align-items: center;
+    padding: 30px 20px;
+    border-right: 1px solid rgba(255,255,255,0.1);
+  }
+  
+  #sidebar #botaoFechar{
+    display: none;
+  }
+
+  #navMenu{
+    border-right: 1px solid rgba(255,255,255,0.1);
+  }
+
+  #navMenu #navegacao{
+    margin: 0;
+  }
+
+  #navMenu #navegacao #navItem{
+    padding: 18px 20px;
+  }
+  
+  .modal{
+    margin-left: 300px;
+  }
+  
+  #main-content{
+    background: white;
+    width: 100%;
+  }
+  
+  #main-content #dashboard-header{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #main-content #dashboard-header #header-right input{
+    padding: 10px 35px 10px 55px;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  #main-content #dashboard-header #header-right #pesquisar{
+    padding: 9px;
+    font-size: 1rem;
+    background: #3498db;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  #main-content #header-left #menu{
+    display: none;
+  }
+  
+  #main-content #header-right{
+    display: inline-block;
+  }
+  
+  #main-content #content-area #dashboard-block{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  #main-content #content-area #dashboard-block .div-block{
+    width: 33%;
+    margin-top: 60px;
+  }
+  
+  #div-vagas #minhas-vagas{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  #vagas-section{
+    width: 100%;
+    margin-left: 300px;
+  }
+  
+  #vagas-section #vagas-header{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #vagas-section #vagas-header #vagas-right{
+    display: inline-block;
+  }
+  
+  #vagas-section #vagas-header #vagas-right input{
+    padding: 10px 35px 10px 55px;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  #vagas-section #vagas-header #vagas-right #pesquisar{
+    padding: 9px;
+    font-size: 1rem;
+    background: #3498db;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  #vagas-section #vagas-left #menu{
+    display: none;
+  }
+  
+  #vagas-section #vagas-emprego{
+    display: flex;
+  }
+  
+  #minhas-candidaturas{
+    width: 100%;
+    margin-left: 300px;
+  }
+  
+  #minhas-candidaturas #candidaturas-header{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #minhas-candidaturas #candidaturas-left #menu{
+    display: none;
+  }
+  
+  #minhas-candidaturas #candidaturas-left #titulo{
+    font-size: 1rem;
+  }
+  
+  #minhas-candidaturas #candidaturas-header #candidaturas-right{
+    display: inline-block;
+  }
+  
+  #minhas-candidaturas #candidaturas-header #candidaturas-right input{
+    padding: 10px 35px 10px 55px;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  #minhas-candidaturas #candidaturas-header #candidaturas-right #pesquisar{
+    padding: 9px;
+    font-size: 1rem;
+    background: #3498db;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  #minhas-candidaturas .candidaturas-enviadas{
+    display: flex;
+  }
+  
+  #perfil-candidato{
+    width: 100%;
+    margin-left: 300px;
+  }
+  
+  #perfil-candidato #perfil-header{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #perfil-candidato #perfil-header #menu{
+    display: none;
+  }
+  
+  #perfil-candidato #perfil-header #titulo{
+    font-size: 1rem;
+  }
+  
+  #perfil-candidato #perfil-header #perfil-right{
+    display: inline-block;
+  }
+  
+  #perfil-candidato #perfil-header #perfil-right input{
+    padding: 10px 35px 10px 55px;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  #perfil-candidato #perfil-header #perfil-right #pesquisar{
+    padding: 9px;
+    font-size: 1rem;
+    background: #3498db;
+    border: none;
+    border-radius: 5px;
+  }
+  
+}
