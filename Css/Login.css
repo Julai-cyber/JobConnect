@@ -155,7 +155,7 @@ body {
 
 /* ================= RESPONSIVIDADE ================= */
 
-/* TABLET */
+/* TABLET 
 @media (min-width: 768px) {
   #container {
     max-width: 700px;
@@ -167,8 +167,10 @@ body {
   }
 }
 
+*/
+
 /* DESKTOP */
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   #container {
     margin: 20px auto;
   }
