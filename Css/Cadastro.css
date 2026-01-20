@@ -231,13 +231,14 @@ body {
 
 @media (min-width: 768px) {
   #container {
-    max-width: 1100px;
+    max-width: 900px;
+    margin: 40px auto;
   }
 
-#tipo-de-conta {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+  #tipo-de-conta {
+     display: flex;
+     justify-content: center;
+     gap: 20px;
   }
 
   #candidato,
