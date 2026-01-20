@@ -1,0 +1,186 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  color: #333;
+}
+
+/* CONTAINER */
+#container {
+  background: white;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  overflow: hidden;
+}
+
+/* HEADER */
+#header {
+  padding: 30px;
+  text-align: center;
+  color: white;
+  background: linear-gradient(to right, #3498db, #2c3e50);
+}
+
+#header h1 {
+  font-size: 2.2rem;
+}
+
+#header p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
+/* LOGIN */
+#logar {
+  margin: 20px;
+}
+
+#logar h2 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+/* FORM */
+#form-section label {
+  font-size: 1.1rem;
+  color: #2c3e50;
+}
+
+#form-section input {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border: 2px solid #e1e8ed;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+/* REMEMBER ME */
+#remember-me {
+  margin: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#remember-me span {
+  font-size: 1rem;
+}
+
+#forgot-password {
+  font-size: 1rem;
+  color: #3498db;
+  text-decoration: none;
+}
+
+/* BUTTONS */
+#btn-login {
+  width: 100%;
+  padding: 17px;
+  margin-top: 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  background: linear-gradient(to right, #3498db, #2980b9);
+  color: white;
+  cursor: pointer;
+}
+
+#btn-signUp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 17px;
+  margin-top: 20px;
+  background-color: #f8f9fa;
+  color: #2c3e50;
+  border: 2px solid #e1e8ed;
+  border-radius: 5px;
+}
+
+/* DIVISOR */
+#divisor {
+  margin: 30px 0;
+  display: flex;
+  align-items: center;
+  color: #2c3e50;
+}
+
+#divisor hr {
+  flex: 1;
+}
+
+#divisor span {
+  margin: 0 10px;
+}
+
+/* CATÁLOGOS */
+#catalogos {
+  text-align: center;
+  margin: 5px;
+  padding: 50px 0 50px 0;
+  background-color: #f8f9fa;
+  border-top: 1px solid #e1e8ed;
+}
+
+#catalogo {
+  margin: 25px;
+}
+
+#catalogo i {
+  font-size: 3rem;
+  margin-bottom: 5px;
+}
+
+#catalogo h3 {
+  font-size: 1.7rem;
+  color: #2c3e50;
+  margin: 7px;
+}
+
+#catalogo p {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+}
+
+/* ================= RESPONSIVIDADE ================= */
+
+/* TABLET */
+@media (min-width: 768px) {
+  #container {
+    max-width: 700px;
+    margin: 40px auto;
+  }
+
+  #catalogo {
+    margin: 20px;
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+  #container {
+    margin: 20px auto;
+  }
+
+  #catalogos {
+    display: flex;
+    justify-content: space-around;
+    margin: 5px;
+  }
+
+  #catalogo {
+    width: 30%;
+    margin: 5px;
+  }
+  }
