@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel do Candidato</title>
+    <link rel="stylesheet" href="./css/Painel_Candidato.css">
+  </head>
+  <body>
+    <!--Informação do Candidato-->
+    <div id="dashboard-container">
+      <div id="areaMenu">
+        <div id="sidebar">
+          <div id="fotoCandidato">
+            FT
+          </div>
+          <div id="info-candidato">
+            <h3 id="userName">Nome do Candidato</h3>
+            <p id="userEmail">Email do Candidato</p>
+            <span id="TipoConta">Tipo de conta</span>
+          </div>
+          <div id="botaoFechar">
+            ×
+          </div>
+        </div>
+      
+        <hr>
+      
+        <!--Menu-->
+        <div id="navMenu">
+          <ul id="navegacao">
+            <li class="navItem active">
+              <a href="#" class="navLink" data-modal="main-content">🏠 Dashboard</a>
+            </li>
+            <li class="navItem">
+              <a href="#vagas-section" class="navLink" class="vagas" data-modal="vagas-section">💼 Vagas</a>
+            </li>
+            <li class="navItem">
+              <a href="#minhas-candidaturas" class="navLink" data-modal="minhas-candidaturas">📄 Minhas Candidaturas</a>
+            </li>
+            <li class="navItem">
+              <a href="#perfil-candidato" class="navLink" data-modal="perfil-candidato">👤 Meu Perfil</a>
+            </li>
+            <li class="navItem">
+              <a href="#" class="navLink" data-modal="vagas-salvas">🔖 Vagas Salvas</a>
+            </li>
+            <li class="navItem">
+              <a href="#" class="navLink" data-modal="configuracoes">⚙️ Configurações</a>
+            </li>
+            <li class="navItem">
+              <a href="#" class="navLink" data-modal="sair">↩️ Sair</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      
+      <!--Conteudo principal-->
+      <div id="main-content" class="modal ativo">
+        <div id="dashboard-header">
+          <div id="header-left">
+             <div id="menu">☰</div>
+             <div id="titulo">
+               <h1>Dashboard</h1>
+             </div>
+          </div>
+          <div id="header-right">
+           <input type="text" id="searchInput" placeholder="Pesquisar vagas...">
+           <button id="pesquisar">🔍</button>
+          </div>
+        </div>
+        
+        <div id="content-area">
+          <div id="dashboard-block">
+            <div id="vagas-concorridas" class="div-block">
+              <i id="iconeDash">💼</i>
+              <h3 id="numDash">12</h3>
+              <p id="pDash">Vagas Concorridas</p>
+            </div>
+            <div id="entrevistas-agendadas" class="div-block">
+              <i id="iconeDash">✅</i>
+              <h3 id="numDash">3</h3>
+              <p id="pDash">Entrevistas Agendadas</p>
+            </div>
+            <div id="visus-doPerfil" class="div-block">
+              <i id="iconeDash">👁️</i>
+              <h3 id="numDash">23</h3>
+              <p id="pDash">Visualizações do Perfil</p>
+            </div>
+          </div>
+        </div>
+        
+        <!--Ultimas 3 Vagas Publicadas-->
+        <div id="ultimas-vagas">
+          <div id="div-vagas">
+            <div id="vagas-header">
+              <h2 id="ult-vagas">Ultimas Vagas Publicadas</h2>
+              <a href="#" id="link-vagas">Ver todas</a>
+            </div>
+            <div id="minhas-vagas">
+              <div id="vaga">
+                <h3 id="titulo-vaga">Desenvolvedor Full Stack</h3>
+                <p id="nome-empresa">Vodacom S.A</p>
+                <p id="home-presencial">📌 Remoto</p>
+                <p id="salario">💵 12.000 MZN - 14.000 MZN</p>
+                <p id="dia-publicado">⏰  2 dias atras</p>
+                <p>Desenvolvimento de Aplicações Web completos utilizando React, node.js e mySQL</p>
+                <div id="acoes">
+                  <button id="candidatar">📩 Candidatar-se</button>
+                  <button id="Detalhes">👁️ Ver Detalhes</button>
+                  <button id="salvar">🔖 Salvar</button>
+                </div>
+              </div>
+              <div id="vaga">
+                <h3 id="titulo-vaga">Desenvolvedor Full Stack</h3>
+                <p id="nome-empresa">Vodacom S.A</p>
+                <p id="home-presencial">📌 Remoto</p>
+                <p id="salario">💵 12.000 MZN - 14.000 MZN</p>
+                <p id="dia-publicado">⏰  2 dias atras</p>
+                <p>Desenvolvimento de Aplicações Web completos utilizando React, node.js e mySQL</p>
+                <div id="acoes">
+                  <button id="candidatar">📩 Candidatar-se</button>
+                  <button id="Detalhes">👁️ Ver Detalhes</button>
+                  <button id="salvar">🔖 Salvar</button>
+                </div>
+              </div>
+              <div id="vaga">
+                <h3 id="titulo-vaga">Desenvolvedor Full Stack</h3>
+                <p id="nome-empresa">Vodacom S.A</p>
+                <p id="home-presencial">📌 Remoto</p>
+                <p id="salario">💵 12.000 MZN - 14.000 MZN</p>
+                <p id="dia-publicado">⏰  2 dias atras</p>
+                <p>Desenvolvimento de Aplicações Web completos utilizando React, node.js e mySQL</p>
+                <div id="acoes">
+                  <button id="candidatar">📩 Candidatar-se</button>
+                  <button id="Detalhes">👁️ Ver Detalhes</button>
+                  <button id="salvar">🔖 Salvar</button>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- VAGAS -->
+    <div id="vagas-section" class="modal" style="display: none;">
+      <div id="vagas-header">
+        <div id="vagas-left">
+          <div id="menu">☰</div>
+          <div id="titulo">
+            <h1>Vagas</h1>
+          </div>
+        </div>
+        <div id="vagas-right">
+           <input type="text" id="searchInput" placeholder="Pesquisar vagas...">
+           <button id="pesquisar">🔍</button>
+        </div>
+      </div>
+      
+      <div id="meio">
+        <h2 id="titulo-vagas">Vagas Disponiveis</h2>
+        <div id="filtrar">
+          <select name="filtro" id="filtro">
+            <option value="todosTipos">Todos as areas</option>
+            <option value="Tecnologia">Tecnologia</option>
+            <option value="saude">Saúde</option>
+            <option value="educacao">Educação</option>
+            <option value="administracao">Administração</option>
+          </select>
+        </div>
+      </div>
+      
+      <div id="vagas-emprego">
+        <div id="vaga">
+          <h3 id="titulo-vaga">Desenvolvedor Full Stack</h3>
+          <p id="nome-empresa">Vodacom S.A</p>
+          <p id="home-presencial">📌 Remoto</p>
+          <p id="salario">💵 12.000 MZN - 14.000 MZN</p>
+          <p id="dia-publicado">⏰  2 dias atras</p>
+          <p>Desenvolvimento de Aplicações Web completos utilizando React, node.js e mySQL</p>
+          <div id="acoes">
+            <button id="candidatar">📩 Candidatar-se</button>
+            <button id="Detalhes">👁️ Ver Detalhes</button>
+            <button id="salvar">🔖 Salvar</button>
+          </div>
+        </div>
+        <div id="vaga">
+          <h3 id="titulo-vaga">Desenvolvedor Full Stack</h3>
+          <p id="nome-empresa">Vodacom S.A</p>
+          <p id="home-presencial">📌 Remoto</p>
+          <p id="salario">💵 12.000 MZN - 14.000 MZN</p>
+          <p id="dia-publicado">⏰  2 dias atras</p>
+          <p>Desenvolvimento de Aplicações Web completos utilizando React, node.js e mySQL</p>
+          <div id="acoes">
+            <button id="candidatar">📩 Candidatar-se</button>
+            <button id="Detalhes">👁️ Ver Detalhes</button>
+            <button id="salvar">🔖 Salvar</button>
+          </div>
+        </div>
+        <div id="vaga">
+          <h3 id="titulo-vaga">Desenvolvedor Full Stack</h3>
+          <p id="nome-empresa">Vodacom S.A</p>
+          <p id="home-presencial">📌 Remoto</p>
+          <p id="salario">💵 12.000 MZN - 14.000 MZN</p>
+          <p id="dia-publicado">⏰  2 dias atras</p>
+          <p>Desenvolvimento de Aplicações Web completos utilizando React, node.js e mySQL</p>
+          <div id="acoes">
+            <button id="candidatar">📩 Candidatar-se</button>
+            <button id="Detalhes">👁️ Ver Detalhes</button>
+            <button id="salvar">🔖 Salvar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- CANDIDATURAS -->
+    <div id="minhas-candidaturas" class="modal" style="display: none;">
+      <div id="candidaturas-header">
+        <div id="candidaturas-left">
+          <div id="menu">☰</div>
+          <div id="titulo">
+            <h1>Minhas Candidaturas</h1>
+          </div>
+        </div>
+        <div id="candidaturas-right">
+           <input type="text" id="searchInput" placeholder="Pesquisar vagas...">
+           <button id="pesquisar">🔍</button>
+        </div>
+      </div>
+      
+      <h2 id="titulo-candidatura">Candidaturas Enviadas</h2>
+      
+      <div class="candidaturas-enviadas">
+        <div class="candidatura">
+          <div class="candidatura-header">
+            <h3 class="candidatura-vaga">Desenvolvedor Full Stack</h3>
+            <p class="estado">Em analise</p>
+          </div>
+          <p class="empresa-candidatura">Tech Solutions</p>
+          <p class="data-candidatura">Candidatura 10/12/2025</p>
+          <div class="btns">
+            <button class="detalhes">Ver Detalhes</button>
+            <button class="Contactar">Contactar Recrutador</button>
+          </div>
+        </div>
+        <div class="candidatura">
+          <div class="candidatura-header">
+            <h3 class="candidatura-vaga">Desenvolvedor Full Stack</h3>
+            <p class="estado">Em analise</p>
+          </div>
+          <p class="empresa-candidatura">Tech Solutions</p>
+          <p class="data-candidatura">Candidatura 10/12/2025</p>
+          <div class="btns">
+            <button class="detalhes">Ver Detalhes</button>
+            <button class="Contactar">Contactar Recrutador</button>
+          </div>
+        </div>
+        <div class="candidatura">
+          <div class="candidatura-header">
+            <h3 class="candidatura-vaga">Desenvolvedor Full Stack</h3>
+            <p class="estado">Em analise</p>
+          </div>
+          <p class="empresa-candidatura">Tech Solutions</p>
+          <p class="data-candidatura">Candidatura 10/12/2025</p>
+          <div class="btns">
+            <button class="detalhes">Ver Detalhes</button>
+            <button class="Contactar">Contactar Recrutador</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- PERFIL -->
+    <div id="perfil-candidato" class="modal" style="display: none;">
+      <div id="perfil-header">
+        <div id="perfil-left">
+          <div id="menu">☰</div>
+          <div id="titulo">
+            <h1>Meu Perfil</h1>
+          </div>
+        </div>
+        <div id="perfil-right">
+           <input type="text" id="searchInput" placeholder="Pesquisar vagas...">
+           <button id="pesquisar">🔍</button>
+        </div>
+      </div>
+      
+      <div id="main-perfil">
+        <div id="perfilDados">
+          <div id="perfil-img">
+          FT
+          </div>
+          <div id="info-perfil">
+            <p id="nomeCandidato">Nome do Candidato</p>
+            <p id="profissao">Profissão do Candidato</p>
+            <p id="morada">Morada</p>
+          </div>
+        </div>
+        <div id="detalhesPerfil">
+          <div id="perfil-visu">
+            <p>24</p>
+            <p>Visualizações</p>
+          </div>
+          <div id="nrCandidaturas">
+            <p>12</p>
+            <p>Candidaturas</p>
+          </div>
+        </div>
+      </div>
+      <div id="contactos">
+        <h2 id="title-contactos">Contactos</h2>
+        <p>joaoperfil@gmail.com</p>
+        <p>+258 847894567</p>
+        <p>Linkedln</p>
+      </div>
+      <div id="sobreMim">
+        <h2>Sobre Mim</h2>
+        <hr>
+        <p>Desenvolvedor Full Stack com 5 anos de experiência em JavaScript, React, Node.js e Python. Apaixonado por criar soluções inovadoras e eficientes. Busco oportunidades desafiadoras para crescer profissionalmente.</p>
+      </div>
+      <div id="experiencia">
+        <h2 id="titulo-xp">Experiência Profissional</h2>
+        <hr>
+        <div class="xp-pro">
+          <h3 class="meu-xp">Desenvolvedor Full Stack</h3>
+          <p class="xp-local">TechSoluntions • 2020 - presente</p>
+          <p>Desenvolvimento de aplicações web utilizando React, Node.js e MongoDB.</p>
+        </div>
+        <hr>
+        <div class="xp-pro">
+          <h3 class="meu-xp">Desenvolvedor Full Stack</h3>
+          <p class="xp-local">TechSoluntions • 2020 - presente</p>
+          <p>Desenvolvimento de aplicações web utilizando React, Node.js e MongoDB.</p>
+        </div>
+      </div>
+      <div id="formacao">
+        <h2 id="titulo-formacao">Formação Academica</h2>
+        <hr>
+        <div class="nome-escola">
+          <h3 class="minha-area">Programação de Aplicações Web</h3>
+          <p class="formacao-escola">Instituto Industrial e de Computação Armando Emílio Guebuza • 2024 - 2026</p>
+        </div>
+      </div>
+      <div id="habilidades">
+        <h2 id="titulo-skills">Habilidades</h2>
+        <hr>
+        <div class="meus-skills">
+          <p>Python</p>
+          <p>JavaScript</p>
+          <p>Node.Js</p>
+          <p>React.Js</p>
+          <p>TypeScript</p>
+        </div>
+      </div>
+      <button id="editar">Editar</button>
+    </div>
+    
+    <script src="./js/meu.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

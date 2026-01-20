@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="./css/Cadastro.css">
+  </head>
+  <body>
+    <div id="container">
+      <div id="header">
+        <a href="Index.html">
+          🔙 Voltar para Login
+        </a>
+        <br>
+        <i>🤝</i>
+        <h1>JobConnect</h1>
+        <p>Crie sua conta gratuitamente</p>
+      </div>
+      
+      <div id="signup-form">
+        <div id="signup-header">
+          <h2>Cadastre-se</h2>
+          <p>Selecione o tipo de conta que deseja criar</p>
+        </div>
+        
+        <div id="tipo-de-conta">
+          <div id="candidato">
+            <i>👨‍💼</i>
+            <h3>candidato</h3>
+            <p>Procuro oportunidade de emprego</p>
+          </div>
+          
+          <div id="empresa">
+            <i>🏬</i>
+            <h3>Empresa</h3>
+            <p>Quero publicar vagas e encontrar talentos</p>
+          </div>
+        </div>
+        
+        <div id="formulario">
+          <!--Formulario para ambos-->
+          <div id="Info-base">
+            <form id="dados">
+              <h3>Informações Básicas</h3>
+              <label for="nome">👤 Nome Completo</label>
+              <br>
+              <input type="text" name="nome" id="nome" placeholder="Seu nome Completo" required>
+              <br>
+              <label for="email">✉️ E-mail</label>
+              <br>
+              <input type="email" name="email" id="email" placeholder="seu@email.com" required>
+              <br>
+              <label for="senha">🔒 Senha</label>
+              <br>
+              <input type="password" name="senha" id="senha" placeholder="Escolha uma senha" required>
+              <br>
+              <label for="confirmar-senha">🔒 Confirmar senha</label>
+              <br>
+              <input type="password" name="confirmar-senha" id="confirmar-senha" placeholder="Digite novamente" required>
+            </div>
+            
+            <!--Campos especificos para candidato-->
+            <div id="campo-candidato">
+              <h3>Perfil Profissional</h3>
+              <label for="area-atuacao">💼 Area de atuação</label>
+              <br>
+              <select id="area-atuacao" required>
+                <option value="">Selecione sua area</option>
+                <option value="tecnologia">Tecnologia</option>
+                <option value="saude">Saude</option>
+                <option value="educacao">Educacao</option>
+                <option value="financas">Finanças</option>
+                <option value="administracao">Administração</option>
+                <option value="vendas">Vendas</option>
+                <option value="engenharia">Engenharia</option>
+                <option value="marketing">Marketing</option>
+                <option value="outros">Outros</option>
+              </select>
+              <br>
+              <label for="formacao">🎓 Formação</label>
+              <br>
+              <input type="text" name="formacao" id="formacao" placeholder="Ex: Ciencia da Computacao" required>
+              <br>
+              <label for="resumo">Resumo Profissional</label>
+              <br>
+              <textarea id="resumo" name="resumo" rows="3" placeholder="Fale um pouco sobre sua experiência e objetivos..."></textarea>
+            </div>
+            
+            <!--Campos especificos para empresa-->
+            <div id="campo-empresa">
+              <h3>Informações da Empresa</h3>
+              <label for="nomeEmpresa">🏬 Nome da Empresa</label>
+              <br>
+              <input type="text" name="nomeEmpresa" id="nomeEmpresa" placeholder="Nome da Empresa" required>
+              <br>
+              <label for="ramo">💳 Ramo de Atuaçao</label>
+              <br>
+              <select id="ramo-empresa" name="ramo">
+                <option value="">Selecione o ramo</option>
+                <option value="tecnologia">Tecnologia</option>
+                <option value="industria">Indústria</option>
+                <option value="comercio">Comércio</option>
+                <option value="servicos">Serviços</option>
+                <option value="financeiro">Financeiro</option>
+                <option value="saude">Saúde</option>
+                <option value="educacao">Educação</option>
+                <option value="outros">Outros</option>
+              </select>
+              <br>
+              <label for="descricao">📄 Sobre a Empresa</label>
+              <br>
+              <textarea id="descricao-empresa" name="descricao" rows="3" placeholder="Descreva sua empresa..."></textarea>
+          </div>
+          
+          <div id="termos">
+                  <input type="checkbox" id="check" required>
+                  <span>Li e aceito os <a href="#">Termos de uso</a> e <a href="#">Politicas de privacidadr</a></span>
+           </div>
+              
+          <button type="submit" id="btn">
+                ▶️ Criar Conta
+           </button>
+              
+            <p id="login-link">Já tem uma conta? <a href="index.html">Faça login</a></p>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="./js/meu.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
