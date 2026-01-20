@@ -1,10 +1,74 @@
 <!DOCTYPE html>
-<html lang="pt">
-<head>
-  <meta charset="UTF-8">
-  <title>Meu Site</title>
-</head>
-<body>
-  <h1>Site hospedado com sucesso </h1>
-</body>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./Css/Login.css">
+  </head>
+  <body>
+    <div id="container">
+      <div id="header">
+        <h1>🤝 JobConnect</h1>
+        <p>Conectando talentos a oportunidades</p>
+      </div>
+      <div id="logar">
+        <h2>Login</h2>
+        <form id="form-section" action="" method="">
+          <div id="email-form">
+            <label for="email">✉️ E-mail</label>
+            <br>
+            <input type="email" name="email" id="email" placeholder="Digite seu email" required>
+          </div>
+          
+          <div id="password-form">
+            <label for="password">🔒 password</label>
+            <br>
+            <input type="password" name="password" id="password" placeholder="Digite sua senha" required>
+            <div class="error" id="message-error">
+              
+            </div>
+          </div>
+          
+          <div id="remember-me">
+              <label class="checkbox-label">
+                <input type="checkbox" name="remeber" id="remeber">
+                <span>Lembrar-me</span>
+              </label>
+              <a id="forgot-password" href="#">Esqueci a Senha</a>
+          </div>
+          
+          <button type="submit" id="btn-login">
+            ➡️ Entrar
+          </button>
+          
+          <div id="divisor">
+            <hr>
+            <span>ou</span>
+            <hr>
+          </div>
+          
+          <a href="#" id="btn-signUp">➕ Criar Nova Conta</a>
+        </form>
+      </div>
+      
+      <div id="catalogos">
+        <div id="catalogo">
+          <i>🔍</i>
+          <h3>Encontre Vagas</h3>
+          <p>Busque oportunidades que combinam com seu perfil</p>
+        </div>
+        <div id="catalogo">
+          <i>📢</i>
+          <h3>Publique Vagas</h3>
+          <p>Divulgue oportunidades para milhares de candidatos</p>
+        </div>
+        <div id="catalogo">
+          <i>🧑‍🧒‍🧒</i>
+          <h3>Conecte-se</h3>
+          <p>Faça networking com profissionais e empresas</p>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
